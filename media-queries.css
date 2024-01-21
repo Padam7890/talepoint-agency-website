@@ -1,0 +1,288 @@
+@media screen and (max-width:1300px) {
+    header{
+        padding: 0 5%; 
+    }
+        .hero--sections .left-side h1{
+            font-size: 45px;
+        }
+        section{
+            padding: 0 5%; 
+            margin-top: 40px;
+
+        }
+        .hero--sections{
+            gap: 0;
+            margin-bottom: 140px;
+           
+        }
+        .right-side .hero-two .snap-text-footer{
+          left:-60px;
+          bottom:0;
+          right: 40px;
+          padding-top: 30px;
+            }
+        .main-features {
+            flex-direction: column;
+          }
+          .highlight--section{
+            height: 600px;
+            background-color: #262626;
+          }
+          .main-features .feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 400px;
+            height: 80px;
+            background-color: #363636;
+            padding: 10px;
+            color: white;
+            border-radius: 7px;
+        }
+        hr {
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            height: 20px;
+            border: 0;
+            border-right: 1px solid #ccc;
+            margin-top: 0;
+          }
+
+          footer{
+            padding: 0 5%;
+            padding-top: 50px;
+            margin-top: 40px;
+          }
+
+
+        
+}
+
+
+@media screen and (max-width:1100px) {
+    header{
+        padding: 0 5%; 
+    }
+   .hamburger{
+        display: none;
+        }
+        .hero--sections{
+            gap: 5px;
+        }
+
+        .hero--sections .left-side h1{
+            font-size: 35px;
+        }
+        section{
+            padding: 0 5%; 
+            margin-top: 40px;
+
+        }
+        .hire--work {
+            flex-direction: column;
+          }
+          .hire--work .left-side .team-photos{
+            display: none;
+          }
+          .hire--work .left-side .header {
+            text-align: center;
+            max-width: 100%;
+          }
+
+          .faq--section {
+            flex-direction: column;
+            justify-content: center;
+            
+          }
+          .faq--section .faq-heading {
+             width: 100%;
+             text-align: center;
+          }
+          .faq-container {
+            width: 100%;
+          }
+
+
+          
+}
+
+@media screen and (max-width:991px) {
+
+     .hamburger{
+        display: block;
+        }
+        .navigation--menu {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          height: 0;
+          position: absolute;
+          width: 100vw;
+          left: 0;
+          top: 80px;
+          right: 0;
+          background: #ffffff;
+          padding: 30px;  
+          overflow: hidden;
+
+        }
+        .navigation--menu.active{
+          height: 450px;
+      
+        }
+
+   
+        .navigation--menu ul , .nav--buttons{
+          display: block;
+          width: fit-content;
+          margin-left: 10px;
+          opacity: 0;
+          
+        }
+      
+        .nav--buttons, .hire-talent, .apply-work {
+          width: 100%;
+          margin-left: 0;
+        }
+        .nav--buttons .apply-work{
+          display: block ;
+          margin-bottom: 10px;
+        }
+        .navigation--menu.active  ul,  .nav--buttons{
+          opacity: 1;
+        }
+
+        .nav--menus li{
+          padding-bottom: 20px;
+        }
+
+     
+        .hero--sections .left-side{
+          margin-top: 100px;
+        }
+
+        section{
+            padding: 0 5%;
+            margin-top: 20px;
+        
+        }
+        .close-icon {
+          display: block;
+      }
+
+      #nav-menu.show {
+          display: flex;
+      }
+
+
+        .hero--sections{
+            margin-top: 80px;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .hero--sections .right-side{
+           display: none;
+        }
+
+
+        .hero--sections .left-side h1{
+            font-size: 45px;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+
+
+        .hero--sections .left-side p{
+            font-size: 25px;
+            max-width: 100%;
+            margin-top: 4px;
+
+        }
+        .hire--work .right-side  .verticalLine{
+          height: 100px;
+        }
+
+
+        .team--list {
+            justify-content: center;
+          }
+
+          .specialization .lists-specialization {
+            grid-template-columns: repeat(4,1fr);
+            column-gap: 20px;
+            row-gap: 10px;
+          }
+          .footer-nav nav{
+            flex-wrap: wrap;
+          }
+       
+        
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .specialization .lists-specialization {
+        grid-template-columns: repeat(3,1fr);
+        column-gap:5px;
+        row-gap: 5px;
+      }
+      .footer-nav nav{
+        row-gap: 40px;
+      }
+      
+    
+}
+
+
+@media screen and (max-width:480px) {
+  .hero--sections .left-side h1{
+    font-size: var(--h1-font-size-s-mobile);
+} 
+.hero--sections .left-side p{
+  font-size: var(--p-font-size-s-mobile) 
+
+}
+.hero--sections{
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.highlight--section{
+  height: auto;
+}
+.highlight-inner{
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+
+ .highlight-inner .intro h1{
+ font-size: var(--h1-font-size-s-mobile);
+}
+.hire--work .left-side .header h2 {
+  font-size: var(--h2-font-size-s-mobile);
+} 
+.hire--work .right-side  .verticalLine{
+  display: none;
+  transition: 0.3s;
+}
+.specialization .lists-specialization {
+  grid-template-columns: repeat(2,1fr);
+}
+.faq--section .faq-heading h1{
+  font-size: var(--h1-font-size-s-mobile);
+}
+.faq-heading p{
+  font-size: var(--p-font-size-s-mobile);
+}
+.faq-question h4{
+  font-size: var(--h4-font-size-s-mobile);
+
+}
+
+}
